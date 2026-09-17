@@ -1,11 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Bakayoko | Computer Science Student</title>
+    <meta
+      name="description"
+      content="Personal portfolio website for a computer science student showing projects, skills, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="logo">Ahmed Bakayoko</div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero" id="home">
+        <div class="container hero-wrap">
+          <div class="hero-copy">
+            <p class="eyebrow">Computer Science Student</p>
+            <h1>Building practical software and web experiences.</h1>
+            <p class="lead">
+              I am a computer science student studying programming and web development.
+              I enjoy learning how to build efficient solutions, improve my technical
+              skills, and create websites that are clean and user-friendly.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="#contact">Contact Me</a>
+            </div>
+
+            <ul class="mini-stats" aria-label="Quick stats">
+              <li><strong>1</strong><span>Project</span></li>
+              <li><strong>4</strong><span>Programming Languages</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Profile card illustration">
+            <div class="profile-card">
+              <div class="avatar">AB</div>
+              <div class="card-text">
+                <p class="card-label">Based in</p>
+                <h2>Montgomery Village</h2>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-top">HTML + CSS</div>
+            <div class="floating-badge badge-bottom">Java OOP</div>
+            <div class="floating-badge badge-bottom">Python</div>
+            <div class="floating-badge badge-top">c++</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About / Bio section -->
+      <section class="about section" id="about">
+        <div class="container about-wrap">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Computer science student focused on programming and web development.</h2>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Hi, I am Ahmed. I am a computer science student studying programming and
+                web development. I enjoy learning how to build useful digital projects,
+                solve problems, and improve my technical skills through hands-on work.
+              </p>
+              <p>
+                I have experience with Python, Java, and C++, and I also hold an associate’s
+                degree in cybersecurity. I am currently learning HTML, CSS, Java OOP, and
+                Cisco networking, while continuing to build my foundation in software development.
+              </p>
+            </div>
+
+            <div class="info-box">
+              <h3>Quick Facts</h3>
+              <ul>
+                <li>Based in: Montgomery Village</li>
+                <li>Languages: Python, C++, Java, HTML, CSS</li>
+                <li>Focus: Programming & Web Development</li>
+                <li>Hobbies: Sports, coding, gym</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Skills</p>
+            <h2>Technologies and topics I am learning.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <span class="skill-icon">01</span>
+              <h3>HTML</h3>
+              <p>Building the structure and content of web pages.</p>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-icon">02</span>
+              <h3>CSS</h3>
+              <p>Styling layouts, spacing, and the overall visual appearance.</p>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-icon">03</span>
+              <h3>Java OOP</h3>
+              <p>Learning object-oriented programming and class-based design.</p>
+            </article>
+
+            <article class="skill-card">
+              <span class="skill-icon">04</span>
+              <h3>Cisco Networking</h3>
+              <p>Exploring networking concepts and system communication basics with cisco routers and switches</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Projects</p>
+            <h2>Current work and class portfolio pieces.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb thumb-one"></div>
+              <div class="project-body">
+                <h3>Project 1</h3>
+                <p>
+                  My first portfolio project, focused on creating a professional personal
+                  website using HTML and CSS using AI Tools.
+                </p>
+                <div class="tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Favorite music artists section -->
+      <section class="artists section">
+        <div class="container artists-box">
+          <div class="section-heading center">
+            <p class="eyebrow">Favorite Artists</p>
+            <h2>Music I like.</h2>
+          </div>
+
+          <div class="artists-grid">
+            <div class="artist-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Wizkid_2019.jpg" alt="Wizkid" />
+              <h3>Wizkid</h3>
+              <p>Nigerian | Afrobeats</p>
+            </div>
+
+            <div class="artist-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Asake_2022.jpg" alt="Asake" />
+              <h3>Asake</h3>
+              <p>Nigerian | Afrobeats</p>
+            </div>
+
+            <div class="artist-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Davido_at_the_2023_The_Beat_99.9_FM_Outdoor_Event.jpg" alt="Davido" />
+              <h3>Davido</h3>
+              <p>Nigerian | Afrobeats</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact section" id="contact">
+        <div class="container contact-box">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something great together.</h2>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:abakayo1@terpmail.umd.edu">abakayo1@terpmail.umd.edu</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Alex Carter</p>
+        <p>Built with HTML and CSS</p>
+      </div>
+    </footer>
+  </body>
 </html>
