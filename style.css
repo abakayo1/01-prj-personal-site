@@ -1,14 +1,15 @@
 :root {
-  --bg: #f4f1ea;
-  --surface: #ffffff;
-  --surface-alt: #f8f5f0;
-  --primary: #1f3a5f;
-  --primary-dark: #142a49;
-  --accent: #d98c5f;
+  --bg: #f5f1eb;
+  --surface: #fffdf9;
+  --surface-alt: #efe7df;
+  --primary: #102a43;
+  --primary-dark: #0a1d2f;
+  --accent: #c77b46;
+  --accent-soft: #f3d7c0;
   --text: #1f2933;
-  --muted: #5b6572;
-  --border: #e4ddd2;
-  --shadow: 0 12px 30px rgba(24, 39, 52, 0.08);
+  --muted: #596673;
+  --border: #e5d9cb;
+  --shadow: 0 18px 40px rgba(16, 42, 67, 0.12);
 }
 
 * {
@@ -22,7 +23,13 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: var(--bg);
+  background: linear-gradient(
+    180deg,
+    #f7f1e8 0%,
+    #f2e7dc 24%,
+    #eee0d0 48%,
+    #f4eadf 100%
+  );
   color: var(--text);
   line-height: 1.7;
 }
@@ -72,8 +79,8 @@ img {
 }
 
 .site-header {
-  background: rgba(255, 255, 255, 0.76);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 253, 249, 0.8);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -155,14 +162,14 @@ img {
 }
 
 .button.primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), #1c3e65);
   color: #fff;
   box-shadow: var(--shadow);
 }
 
 .button.secondary {
-  background: transparent;
-  border: 1px solid var(--border);
+  background: rgba(199, 123, 70, 0.08);
+  border: 1px solid rgba(199, 123, 70, 0.4);
   color: var(--primary-dark);
 }
 
@@ -203,8 +210,8 @@ img {
 .profile-card {
   width: 100%;
   max-width: 320px;
-  background: linear-gradient(135deg, #f8f3ea, #ffffff);
-  border: 1px solid var(--border);
+  background: linear-gradient(135deg, #fffaf4, #f5efe9);
+  border: 1px solid rgba(199, 123, 70, 0.18);
   border-radius: 28px;
   box-shadow: var(--shadow);
   padding: 28px 24px;
@@ -216,14 +223,13 @@ img {
   width: 84px;
   height: 84px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 800;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   margin-bottom: 22px;
+  box-shadow: 0 12px 30px rgba(199, 123, 70, 0.35);
+  border: 2px solid rgba(16, 42, 67, 0.08);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
 .card-label {
@@ -243,8 +249,8 @@ img {
 
 .floating-badge {
   position: absolute;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(16, 42, 67, 0.08);
   box-shadow: var(--shadow);
   border-radius: 999px;
   padding: 10px 16px;
@@ -287,7 +293,7 @@ img {
 
 .info-box {
   flex: 1;
-  background: var(--surface);
+  background: linear-gradient(180deg, #fffdfb, #f8f2eb);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 24px 22px;
@@ -328,23 +334,27 @@ img {
 
 .skill-card {
   flex: 1 1 220px;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #ffffff, #faf4ef);
+  border: 1px solid rgba(16, 42, 67, 0.08);
   border-radius: 22px;
   padding: 28px 22px;
   box-shadow: var(--shadow);
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+}
+
 .skill-icon {
-  display: inline-block;
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: rgba(217, 140, 95, 0.12);
+  background: rgba(199, 123, 70, 0.12);
   color: var(--primary-dark);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 28px;
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -369,8 +379,8 @@ img {
 
 .project-card {
   flex: 1 1 300px;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #fffdfb, #f9f2eb);
+  border: 1px solid rgba(16, 42, 67, 0.08);
   border-radius: 22px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -383,15 +393,15 @@ img {
 }
 
 .thumb-one {
-  background: linear-gradient(135deg, #1f3a5f, #d98c5f);
+  background: linear-gradient(135deg, #102a43, #c77b46);
 }
 
 .thumb-two {
-  background: linear-gradient(135deg, #e8d8c7, #b7c7d6);
+  background: linear-gradient(135deg, #e4cdbc, #b0becd);
 }
 
 .thumb-three {
-  background: linear-gradient(135deg, #15273f, #9db5c9);
+  background: linear-gradient(135deg, #0e243b, #7d8ea6);
 }
 
 .project-body {
@@ -416,7 +426,7 @@ img {
 }
 
 .tags span {
-  background: rgba(31, 58, 95, 0.08);
+  background: rgba(199, 123, 70, 0.12);
   color: var(--primary-dark);
   border-radius: 999px;
   padding: 7px 10px;
@@ -425,8 +435,8 @@ img {
 }
 
 .artists-box {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #fffdf9, #f6efe8);
+  border: 1px solid rgba(199, 123, 70, 0.18);
   border-radius: 26px;
   padding: 38px 30px;
   box-shadow: var(--shadow);
@@ -469,7 +479,7 @@ img {
 }
 
 .contact-box {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, var(--primary), #163a5c 55%, var(--accent));
   border-radius: 28px;
   padding: 36px 30px;
   display: flex;
